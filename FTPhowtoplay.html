@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<style>
+body {background: #eeeeee}
+</style>
+</head>
+    <body>
+
+<h1 style="font-size:40px;"><img src="forpeoplecov.jpg" hspace=20 
+    style="float:right;">&nbsp;&nbsp;&nbsp;For The People 3.4</h1>     
+<p style="font-size:22px;">
+This new FTP module was created by <strong>Brian Reynolds</strong>. Special
+thanks to <strong>Game Designer Mark Herman</strong> who answered esoteric rules 
+questions during development, as well as Mark Simonitch from GMT who supplied 
+the hi-res art from the latest edition of the game. Version 3.4 also takes advantage
+of the new features found in VASSAL version 3.4.0+. Thanks also to Steve Petras, Knutz Grunitz, and
+Judd Vance, along with anyone else who contributed to earlier versions of the
+module -- much inspiration was drawn from their excellent work!
+
+<br> <br>The module is presently maintained by <strong>Brian 
+Reynolds</strong> - please report any problems to 
+<strong>brian@brianreynolds.net</strong>. 
+                                                       
+ <br> <br>
+    <h2 style="font-size:30px">First Things First</h2><p style="font-size:22px;">
+Under the "Help" menu you will find a link to the latest <strong>Living 
+Rules</strong> version of the For The People rulebook. If you are still 
+learning how to play 
+the game itself, several <strong>YouTube videos</strong> are available online,
+including an excellent one by Mark Herman himself at 
+https://www.youtube.com/watch?v=jmcAi-k2mCg <br> <br>
+
+      <h2 style="font-size:30px">If It 'Runs Too Slow'</h2>
+
+      <p style="font-size:22px;">
+      As of version 3.2, Auto Stack Organization defaults to Off. If you find  
+      the module running too slowly on your computer, go to the "Rules & 
+      Preferences" tab (or <strong>Alt+R</strong> and turn off "Auto Stack 
+      Organization". This will speed up unit movement at the expense of the 
+      automatic organization of big stacks. You can still manually invoke the 
+      reorganizer for a stack with <strong>Ctrl+A</strong>.
+                                                          <br><br>
+
+                                                  <h3 style="font-size:26px">1.
+Choosing a Side</h3><p style="font-size:22px;">
+The side you choose gives you access to its hand of cards--or choose Solitaire 
+to have access to both (also useful for e.g. local play on one computer, or when 
+using the ACTS server). For players and competitive events in need of security 
+for cards and dice rolls, it is recommended to use ACTS (acts.warhorsesim.com) 
+or a similar server -- the Vassal client may discourage "casual cheating" but by 
+itself cannot provide meaningful security. 
+<br> <br><img src="FTP Card Back-2014.png" width="71" height="100"
+>&nbsp;&nbsp;<img src="047.png" width="71" height="100"
+>&nbsp;&nbsp;<img src="114.png" width="71" height="100" 
+>
+                    <h3 style="font-size:26px">2. Cards</h3>
+          <p style="font-size:22px;"> To 
+reduce window clutter, card decks have been placed on the main map below the 
+board. Cards can be drawn through several methods, including right-clicking on 
+the draw pile, or the "Draw" buttons in each player's hand window. <br><br> 
+<strong>Playing Cards: </strong> Select a card in your hand, right click, and 
+choose from: Play as Event (<strong>Ctrl+E</strong>) to play as an "EC" or Play 
+for OPS (<strong>Ctrl+O</strong>) to play as an OC. There is also a "discard" 
+option. <br><br> <strong>Random Discards: </strong> In each player hand window 
+is a button which will cause a single card to be randomly discarded - use when 
+this is required by an event.
+
+<br><br><img src="PC-USA.png" 
+>&nbsp;<img src="ChooChooCSA.png" 
+>&nbsp;<img src="FortUSA.png"><h3 style="font-size:26px">3. Units 
+and Markers</h3>
+            <p style="font-size:22px;"> PC Markers, Forts, Armies, Generals, 
+SP's, and the various map markers are separated into different game piece layers 
+to prevent accidental movement and stacking. The drawing order from bottom to
+top PC Markers, Forts, SPs, Generals, Armies, Status Markers, Cards. Units of
+the same exact type placed in a space will stack with other units there (double
+click to expand a stack so that individual pieces can be clicked on).
+
+
+    <br><br><img src="examplereorg.png" 
+><br><br><strong>Automatic Stack Organization: </strong>When this feature is on, 
+groups of
+    units will auto-organize when placed in the same space, so that the contents
+    of the space are easier to view. Several organization formats are 
+    automatically switched between, including a "battle mode" when forces from 
+    both players are present in the same space. This auto-organization DOES use 
+    come computation power, and can be adjusted under the 
+    "Rules and Prefs" button on the toolbar. Even when off, auto-reorg can be 
+    invoked manually using <strong>Ctrl+A</strong>. Even when auto-organized, 
+    pieces can then be manually readjusted within a space without harm. 
+
+<br><br><img src="ANVfront.png" >&nbsp;
+<img src="AoPfront.png" hspace="20" ><h3 style="font-size:26px">4. Armies</h3>
+           <p style="font-size:22px;"> If sufficient SP are present in a space, 
+an army can be created by right-clicking on the General you wish to put in 
+command and selecting the desired army. Creating an army in this fashion will 
+automatically manage Strategic Will adjustments; an army can still of course be 
+"created" manually by dragging its piece to the map and moving appropriate 
+generals manually to its display area. 
+               <br><br><strong>Army Counter Stats: </strong>The current SP 
+               strength of an army is shown as a large numeral on the lower 
+               right of the counter. The Strategy rating of the army's commander 
+               (or 3 if no commander i.e. "default" commander) is shown on the 
+               left side of the counter. Next to the strategy rating will appear 
+               an asterisk (*) if the army contains at least one cavalry 
+               brigade, or an exclamation point (!) if it is a "Mongol Army" 
+               consisting entirely of cavalry SP and therefore not allowed e.g. 
+               to flip PC markers.
+    <br><br><strong>Picking Up and Dropping Off SP's: </strong>With an army 
+    selected, using the <strong>PGDN</strong> key will cause an SP to be dropped 
+    off in the current space, and one point will automatically be deducted from 
+    the army's strength display. Similarly, the <strong>PGUP</strong> key will 
+    pick up a strength point and add it to the army. <strong>Ctrl+PGUP</strong> and 
+    <strong>Ctrl+PGDN</strong> will pickup/dropoff larger groups of strength 
+    points. <br><br><strong>Picking Up and Dropping Off Generals and Cavalry:
+    </strong>Armies can similarly drop off and pick up Generals using
+    <strong>Ctrl+G/Alt+G</strong>, and they can drop off and pick up Cavalry 
+    using <strong>Ctrl+V/Alt+V</strong>. 
+               <br><br><strong>Dropping Off Corps: </strong>Sometimes when 
+               dropping off a corps
+    from a large army it is convenient to simply dump the entire contents of the 
+    army (except for its commander) into the current space, examine the various 
+    generals, cavalry, and SP's available, and then pick everything left back up 
+    again when once the corps moves off. This can be done with the  
+    <strong>Ctrl+Shift+PGDN</strong> key to drop everything off and the 
+    <strong>Ctrl+Shift+PGUP</strong> key to pick everything back up. 
+    <br><br><strong>Manually Adjusting Army Strength: </strong>With an army 
+    selected, hitting the + and - keys on the Numpad will manually adjust the 
+    army's strength. Or hitting <strong>Ctrl+1</strong> through 
+    <strong>Ctrl+9</strong> will directly set the army's strength to a value 1 
+    through 9. <strong>Alt+0</strong> through <strong>Alt+5</strong> will set 
+    the strength from 10 to 15. The Army SP marker on the army display can also 
+    of course be manually adjusted (or any of these hotkeys can be used with the 
+    Army SP marker selected). <br><br><strong>Eliminating/Removing Armies: 
+    </strong>Pressing <strong>Ctrl+E</strong> with an Army selected will 
+    eliminate that army, sending generals and cavalry to the appropriate turn on 
+    the turn track for future re-entry. Strategic Will will be adjusted for loss 
+    of an Army, including an additional penalty of the commanding general's 
+    political rating if there is another army in the space.
+<br><br>
+<img src="Grant.png" 
+>&nbsp;<img src="Lee.png" 
+>&nbsp;<img src="USAgeneral.png" 
+>&nbsp;<img src="CSAgeneral.png" >
+<h3 style="font-size:26px">5. Generals</h3><p style="font-size:22px;"> 
+Newly arriving generals are
+    available near the turn track at the lower right of the map, each just above
+    the appropriate turn for that general to arrive. 
+    <br><br><strong>Randomizing
+    New Generals: </strong>A stack of newly arriving generals can be randomized
+    by right clicking their stack and selecting the "Randomize Generals" 
+    (<strong>Ctrl+R</strong>) option. They will be flipped upside down and 
+    randomized. The upside-down tokens can then be dragged to desired locations 
+    to assign them, before flipping them back up to reveal them. 
+    <br><br><strong>Randomizing General Casualties:
+    </strong>When a general needs to be selected randomly as a casualty, this
+    can be done by stacking all the generals who qualify to be casualties in a
+    single stack (including, if applicable, Cavalry Brigades) and then selecting
+    the "Randomize" option. The General (or Cavalry Brigade) which is randomized
+    to the top of the stack is the one which should be taken as the casualty.
+
+    <br><br><strong>Generals With Armies: </strong>Generals on an army display 
+    will have a right+click option to allow them to be placed on the map with 
+    their army. Likewise Generals on the map in a space with an army will have 
+    an option to send them to the army display. Generals in the "turn track" 
+    region also have several "quick deploy" options to place them with armies or 
+    in common locations on the map.
+<br><br>
+<img src="CavStoneman.png" >&nbsp;<img src="CavForrest.png"
+>&nbsp;<img src="Stoneman.png" >&nbsp;<img 
+src="CSAgeneralcav.png" >
+<h3 style="font-size:26px">6. Cavalry Brigades</h3><p style="font-size:22px;"> 
+Cavalry Generals have a 
+    menu option allowing them to form a cavalry brigade when an SP is present 
+    with them on the map (or in the army to which they've been assigned). 
+    Cavalry Strength points will thenceforth register as an SP when present on 
+    an Army display, and will be properly tracked when picked up and dropped 
+    off. Cavalry Brigade pieces have appropriate right+click options when either 
+    the SP or the General need to be taken as casualties. If the "Cavalry 
+    General Replacements" optional rule is in effect, killed Cavalry Generals 
+    will automatically have their substitutes added to the turn track as 
+    appropriate.
+<br><br>
+<img src="StratWillUSA1down.png" >&nbsp;<img 
+src="StratWillCSA1up.png" >&nbsp;<img 
+src="StratWillUSA10.png" >&nbsp;<img 
+src="StratWillCSA100.png" >
+<h3 style="font-size:26px">7. Strategic Will</h3><p style="font-size:22px;"> 
+    There are several ways to adjust Strategic Will (in addition to manually 
+    adjusting it by moving/flipping the counters on the display). 
+    <br><br><strong>1. The Strategic Will screen (Alt+W) </strong> contains 
+    buttons which can be clicked to apply an adjustment -- these will in turn 
+    apply an appropriate "fortunes of war" additional adjustment when the SW 
+    momentum flips between + and -. <br><br><strong>2. Playing an Event Card 
+    </strong> that includes an SW adjustment will automatically make the 
+    adjustment, including fortunes-of-war bonuses and penalties. 
+    <br><br><strong>3. Displacing a Capital </strong> will automatically apply 
+    the appropriate SW penalty and fortunes of war. <br><br> <strong>4. 
+    Destroying a Resource Site </strong> will automatically apply appropriate SW 
+    adjustments. <br><br> <strong>5. Controlling a State: </strong>When a State 
+    Control marker is placed (or flipped) in the square for a state, appropriate 
+    SW adjustments will be made automatically. 
+<br><br>
+<img src="PC-USA.png" 
+>&nbsp;<img src="PC-CSA.png" >&nbsp;<img
+src="StateUSA.png" >&nbsp;<img src="StateCSA.png" 
+>
+
+<h3 style="font-size:26px">8. PC Markers and State Control</h3><p style="font-size:22px;">The numbers of PC Markers present in 
+Border States, and the number of Union PC Markers in Confederate States (and 
+Confederate PC Markers in Union States) are automatically tracked and displayed 
+near the state's name. If a Border State becomes Confederate Controlled, only 
+the Union PC Markers will henceforth be tracked; once a Border State becomes 
+Union Controlled no further tracking is necessary and the tracking numbers 
+disappear.
+<br><br>
+<img src="exampleempty.png"><br><br>
+<h3 style="font-size:26px">9. Empty Spaces and menus</h3><p style="font-size:22px;">Clicking on an empty space allows access to a 
+special right+click menu (and special hotkeys) for that space -- for example 
+SP's can be added directly, or PC Markers, without the need to drag them from 
+the Markers display (but the Markers display is also available for players who 
+prefer it). With an empty space selected, <strong>Ctrl+1</strong> through 
+<strong>Ctrl+6</strong> will add a Confederate SP marker of the appropriate 
+value; <strong>Alt+1</strong> through <strong>Alt+6</strong> will add a Union SP 
+marker. <br><br><img src="ChooChooCSA.png" >&nbsp;<img src="ChooChooUSA.png"> 
+<br><br>
+                               <h3 style="font-size:26px">10. Strategic Movement</h3><p style="font-size:22px;">To prevent the necessity of repeatedly scrolling to the
+left side of the screen to update rail markers while conducting strategic 
+movement, global hotkeys are provided: <strong>CTRL+Numpad+PLUS</strong> and 
+<strong>CTRL+Numpad+MINUS</strong> will update the Confederate Strategic 
+Movement (Rail) marker, and <strong>ALT+Numpad+PLUS</strong> and 
+<strong>ALT+Numpad+MINUS</strong> will update the Union Strategic Movement 
+(Rail) marker. These hotkeys are always available, no matter what unit or marker 
+is currently selected. <br><br>
+
+<img src="str1.png" >&nbsp;<img src="str4.png"
+>&nbsp;<img src="str3.png" >&nbsp;<img 
+src="str6.png" >
+        <h3 style="font-size:26px">11. Preferences</h3><p
+style="font-size:22px;">The Rules & Preferences screen, accessed from the 
+    toolbar or <strong>Alt+R</strong>, allows Optional Rules functionality to be 
+    turned on and off for Cavalry General Replacements and Additional General 
+    Capabilities rules. Automatic Stack Organization can also be turned up or 
+    town. The VASSAL / ACTS preference determines whether the "Draw Specific 
+    Cards" option for the draw pile will reveal the card names. 
+    <br><br><h3 style="font-size:26px">12. Movement Trails</h3><p style="font-size:22px;">Movement Trails can be turned on and off for 
+    all units with the button on the toolbar. The movement histories for all 
+    units can be cleared with the adjacent button. 
+    <br><br><h3 style="font-size:26px">13. LookAt "Flare" feature</h3><p style="font-size:22px;">Ctrl+Clicking on any part of the map will 
+    briefly place a circular "flare" symbol on the map in that location to call 
+    attention to that location. This symbol will appear on the opponent's map in 
+    both server and logfile/PBEM play. 
+
+</BODY>
+</HTML>

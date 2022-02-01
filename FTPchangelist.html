@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<style>
+body {background: #eeeeee}
+</style>
+<style type="text/css">
+</style>
+</head>
+<BODY>
+<h1>For The People VASSAL Module Change List</h1>
+<h2>3.4 Changelist</h2>
+<h3>Improvements</h3>
+<ul style="margin-top:-20px;">
+    <li>Corrected a problem where pieces dragged together would sometimes "unstack".</li>
+</ul>
+<h2>3.3 Changelist</h2>
+<h3>Improvements</h3>
+<ul style="margin-top:-20px;">
+    <li>Can now place 8 Union SP in Washington DC all at once (with Alt+8 or right-click menu)</li>
+    <li>Takes advantage of various nice VASSAL 3.4.0 features</li>
+    <li>There is now a much more noticeable "drag threshold" (10 pixels instead of 1), so pieces/stacks won't be so pixel-sensitive and fidgety.</li>
+    <li>Rollover text for groups of units does a better job of picking up other counters underneath (e.g. trenches) as well</li>
+    <li>"Change Sides" button now defaults to opposite site for quicker "Hot Seat" play</li>
+    <li>Ctrl+Mousewheel will zoom the map in and out (YAY! They let me put this in VASSAL! Coming soon to ALL your games...)</li>
+    <li>Mousewheel in general should "scroll text windows faster", it used to be infuriatingly slow</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul style="margin-top:-20px;">
+    <li>When an army was eliminated in the same space as an opposing army, extra SW penalty was being charged. This now correctly happens ONLY when an army is eliminated in the same space as another *friendly* army.</li>
+    <li>Ewell and AP Hill were incorrectly missing from some scenario maps - fixed</li>
+</ul>
+
+
+<h2>3.2 Changelist</h2>
+<h3>Improvements</h3>
+<ul style="margin-top:-20px;">
+    <li>NOTE: any time the version number changes, I do NOT recommend using 
+        saves made with earlier versions of the module -- finish any current 
+        games using the version you started it with. Although they will "kind of 
+        work", you will not actually most of the new improvements, especially 
+        the performance-related ones. 
+    </li>
+    <li>Auto Organize Stacks now defaults to "off" - apparently my computer 
+        is faster than I thought it was :)</li>
+    <li>Substantial performance improvements, particularly with 
+        auto-organize stacks off.</li>
+    <li>Armies now have Ctrl+P hotkey to "Convert/Place PC Marker"</li>
+    <li>Strength Point counters now have Expand (Ctrl+X) and Consolidate 
+        (Ctrl+C) commands -- e.g. a 6 turns into a pile of six ones, and vice 
+        versa. 
+        </li>
+    <li>Forts can be built by selecting empty spaces and picking Ctrl+F 
+        (CSA) or Alt+F (USA). So that you don't have to go drag one all the way 
+        across the map from the fort pool.</li>
+    <li>"Middle" auto-organize level is now much faster but pared down.</li>
+    <li>Game log reporting now allows bolding, multiple colors, etc, for 
+        better clarity.</li>
+    <li>Dice display symbols in log when rolled -- so cute!</li>
+    <li>Scrolling improved in "How to Play" section.</li>
+    <li>General cleanup and polish throughout.</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul style="margin-top:-20px;">
+    <li>Little Rock was missing from resource site list; fixed.</li>
+    <li>Emancipation event was missing its card text.</li>
+    <li>Create-Army options were sometimes greyed out improperly for 
+        generals.</li>
+    <li>Some cards when played for the event weren't displaying their card 
+        text.</li>
+    <li>Cavalry brigades eliminated from army displays weren't always 
+        updating the Army SP count.</li>
+    <li>Various typos fixed in card text, etc.</li>
+</ul>
+
+<h2>3.1 Changelist</h2>
+<h3>Improvements</h3>
+<ul style="margin-top:-20px;">
+    <li>Armies now display commander's Strategy rating on left side of 
+        counter.</li>
+    <li>Army counter contains "*" if Army has at least one Cav Brigade, or 
+        "!" if it is a MONGOL ARMY of only Cavalry(!)</li>
+        <li>When randomizing generals on a map or board location (e.g. for 
+            casualties rather than for initial placement), the name of the top
+            General in the resulting stack is reported in the log, to improve
+            clarity that the top one in the resulting stack is the intended 
+            randomized casualty.</li>    
+</ul>
+<h3>Bug Fixes</h3>
+<ul style="margin-top:-20px;">
+    <li>Maintenance key added to force initial PC markers to self-register.</li>
+    <li>State PC status now properly disappears when a border state flipped 
+        from CSA to USA control.</li>
+    <li>Army's internal cavalry count now updated properly when a Cav 
+        Brigade is flipped to 2 SP. (was previously okay if 2 SP cav moved in or
+        out, but not if flipped right there inside army.</li>
+</ul>
+<h2>3.0 Changelist</h2>
+<h3>Improvements</h3>
+<ul style="margin-top:-20px;">
+    <li>All-new module!</li>
+    <li>Latest hi-res art supplied by Mark Simonitch from GMT.</li> 
+    <li>Much automation now available to make record-keeping easier.</li>
+    <li>Automatic stack reorganization</li>
+    <li>Wherever possible, on-map charts have been turned "right side up" 
+        for ease of on-screen play.</li>
+    <li>Java source for custom classes incorporated into module.</li>
+</ul>
+</BODY>
+</HTML>

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<style>
+body {background: #eeeeee}
+</style>
+<style type="text/css">
+</style>
+</head>
+<BODY>
+<h1>For The People</h1>
+<h2>Tips When Updating/Maintaining Module</h2>
+Vassal Module development is a bit "wild west", in that anyone can jump in and 
+do it, and anyone can upload a new one to the server! So by all means jump in 
+and help! BUT, there are a few "delicate" aspects of updating a For The People 
+module, and this file lists a few steps that "if followed" will make everyone's 
+life easier. They are also documented here lest we forget them ourselves!    -- 
+Brian Reynolds, 2020
+
+<h2>A WORD OF WARNING</h2>   
+This module does depend on quite a few "custom java classes". The most 
+complicated ones have to do with the automatic stack reorganization (if you 
+think it's slow now, wait till you see it without the custom classes!). The 
+source java code for the classes IS included in the module "vmod" file, but 
+modifying and maintaining custom java classes is considerably more painstaking 
+than regular Vassal work, and is definitely "not for the faint of heart". You 
+have been warned!
+
+<h2>FIRST AND FOREMOST!</h2>
+Most importantly, the four "Scenario" saves must be recreated afresh whenever 
+there have been any changes to prototypes and internal logic. The 
+"Refresh Counters" function is NOT sufficient, as there are aspects which this 
+cannot touch! Therefore each of the four scenarios must be created again 
+manually - frustrating, but only takes about 5-10 minutes.
+
+<h2>Step 0 - (Optional-but-Recommended) See if the coast is clear!</h2>
+<ul style="margin-top:-20px;">
+<li>Email the person listed in the "How To Play" entry as the current maintainer 
+    of the module and make sure they're not about to drop a giant new version or 
+    something. You don't want to do a bunch of work for nothing, etc. If two 
+    people are going to do work on the module, it's best for them to trade it 
+    back and forth for periods of time so that only one person is editing the 
+    module at the same time -- there is no practicable way to "merge changes" 
+    between two versions.</li>
+</ul>
+
+<h2>Step 1 - Update Campaign/1861 Scenario</h2>
+<ul style="margin-top:-20px;">
+<li>Start with a "fresh VASSAL boot" of the module</li>
+<li>From File/Scenario menu, select "Custom Game". Do NOT select the 
+    Campaign/1861 scenario! That would load the old now-tainted save!</li>
+<li>Join as "observer".</li>
+<li>Click in the chat line so that the cursor is blinking there - this 
+    makes sure the toolbar will have focus for hotkeys.</li>
+    <li>Press Alt+Ctrl+Shift+P. This forces all the starting PC Markers to 
+        "register" w/ the State control displays. This ONLY needs to be done
+        with the 1861/Campaign scenario, not the other scenarios.</li>
+    <li>Press Alt+Ctrl+Shift+A. It may take upwards of 20-30 seconds for 
+        this command to process! This will force an automatic Stack Reorg of all 
+        units, and will also make sure that the At Start PC Markers register 
+        properly. 
+        </li>
+    <li>Click the "Clear Movement History" button at the upper right of the 
+        toolbar. This ensures that if movement trails are turned on during play
+        there will not be spurious trails leftover from the setup 
+        phase.</li>
+<li>"Save Game As..." and pick an appropriate save file name e.g. 1861-3-0</li>
+<li>In the module editor, find the "Scenarios" entry at the bottom.</li>
+<li>Edit the Campaign/1861 entry</li>
+<li>Use the "Select File" button to replace the save with your newly created one.</li>
+</ul>
+
+<h2>Step 2 - Update 1862 Scenario</h2>
+<ul style="margin-top:-20px;">
+<li>Again, start with a "fresh VASSAL boot" of the module</li>
+<li>From File/Scenario menu, select "Custom Game". Do NOT select the 
+    1862 scenario! That would load the old now-tainted save!</li>
+<li>Join as "observer".</li>
+<li>Click in the chat line so that the cursor is blinking there - this 
+    makes sure the toolbar will have focus for hotkeys.</li>
+    <li>Press Alt+Ctrl+Shift+2. It may take <strong>upwards of a full 
+        minute</strong> for this command to process! This will set up the board 
+        for the 1862 scenario.
+        </li>
+    <li>Click the "Clear Movement History" button at the upper right of the 
+        toolbar. This ensures that if movement trails are turned on during play
+        there will not be spurious trails leftover from the setup 
+        phase.</li>
+<li>"Save Game As..." and pick an appropriate save file name e.g. 1862-3-0</li>
+<li>In the module editor, find the "Scenarios" entry at the bottom.</li>
+<li>Edit the 1862 entry</li>
+<li>Use the "Select File" button to replace the save with your newly created one.</li>
+</ul>
+
+<h2>Step 3 - Update 1863 Scenario</h2>
+<ul style="margin-top:-20px;">
+<li>Again, start with a "fresh VASSAL boot" of the module</li>
+<li>From File/Scenario menu, select "Custom Game". Do NOT select the 
+    1863 scenario! That would load the old now-tainted save!</li>
+<li>Join as "observer".</li>
+<li>Click in the chat line so that the cursor is blinking there - this 
+    makes sure the toolbar will have focus for hotkeys.</li>
+    <li>Press Alt+Ctrl+Shift+3. It may take <strong>upwards of a full 
+        minute</strong> for this command to process! This will set up the board 
+        for the 1863 scenario.
+        </li>
+    <li>Click the "Clear Movement History" button at the upper right of the 
+        toolbar. This ensures that if movement trails are turned on during play
+        there will not be spurious trails leftover from the setup 
+        phase.</li>
+<li>"Save Game As..." and pick an appropriate save file name e.g. 1863-3-0</li>
+<li>In the module editor, find the "Scenarios" entry at the bottom.</li>
+<li>Edit the 1863 entry</li>
+<li>Use the "Select File" button to replace the save with your newly created one.</li>
+</ul>
+
+    <h2>Step 4 - Update 1864 Scenario</h2>
+<ul style="margin-top:-20px;">
+<li>Again, start with a "fresh VASSAL boot" of the module</li>
+<li>From File/Scenario menu, select "Custom Game". Do NOT select the 
+    1864 scenario! That would load the old now-tainted save!</li>
+<li>Join as "observer".</li>
+<li>Click in the chat line so that the cursor is blinking there - this 
+    makes sure the toolbar will have focus for hotkeys.</li>
+    <li>Press Alt+Ctrl+Shift+4. It may take <strong>upwards of TWO FULL 
+        MINUTES</strong> for this command to process! This will set up the board 
+        for the 1864 scenario.
+        </li>
+    <li>Click the "Clear Movement History" button at the upper right of the 
+        toolbar. This ensures that if movement trails are turned on during play
+        there will not be spurious trails leftover from the setup 
+        phase.</li>
+<li>"Save Game As..." and pick an appropriate save file name e.g. 1864-3-0</li>
+<li>In the module editor, find the "Scenarios" entry at the bottom.</li>
+<li>Edit the 1864 entry</li>
+<li>Use the "Select File" button to replace the save with your newly created one.</li>
+</ul>
+
+    
+<h2>Step 5 - Optional But Recommended - adjust Change List and Credits</h2>
+<ul style="margin-top:-20px;">
+<li>Extract the "FTPHowToPlay.html" and "changelist.html" from the vmod file. 
+    (You can temporarily rename the .vmod to a .zip file to make it easier to 
+    view/extract files, then rename it back)</li>
+<li>Update the FTPHowToPlay.html as appropriate. Add your name to the credits 
+    near the top. Mark yourself as the current maintainer of the module ("you 
+    break it, you buy it!"). Note the file needs to be placed at three different 
+    locations in the Vmod/Zip file -- the one in the root directory is used for 
+    the toolbar version of How To Play; the other two activate the entry on the 
+    Help menu. When I do it, I make a separate version that includes real 
+    hyperlinks for the Help menu version, because real hyperlinks fail in the 
+    non-help-menu version. But you do you!
+<li>Update the changelist.html to add your new changes to the top. Leave the old changelist notes there (unless you're doing a sweeping revision).</li>
+<li>I recommend manually inserting your new versions into the file (don't 
+    use Vassal editor for this).</li>
+</ul>
+
+<h2>Step 5 - Save Your Module Out</h2>
+<h2>Step 6 - Test Module Even More ("Just In Case")</h2>
+<h2>Step 7 - Upload to the For the People Vassal Module page</h2>
+<h2>Step 8 - Relax and Enjoy!</h2>
+
+</BODY>
+</HTML>
