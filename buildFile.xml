@@ -287,6 +287,11 @@
         <VASSAL.build.module.properties.GlobalProperty description="" initialValue="0" isNumeric="true" max="1000" min="0" name="DrawCount_CSA" wrap="false"/>
         <VASSAL.build.module.properties.GlobalProperty description="" initialValue="15" isNumeric="true" max="15" min="0" name="ChooChoo_USA" wrap="false"/>
         <VASSAL.build.module.properties.GlobalProperty description="" initialValue="7" isNumeric="true" max="15" min="0" name="ChooChoo_CSA" wrap="false"/>
+        <VASSAL.build.module.folder.GlobalPropertyFolder desc="" name="Turn Tracker defaults">
+            <VASSAL.build.module.properties.GlobalProperty description="" initialValue="18" isNumeric="false" max="null" min="null" name="TurnTracker.defaultFontSize" wrap="false"/>
+            <VASSAL.build.module.properties.GlobalProperty description="" initialValue="true" isNumeric="false" max="null" min="null" name="TurnTracker.defaultFontBold" wrap="false"/>
+            <VASSAL.build.module.properties.GlobalProperty description="" initialValue="true" isNumeric="false" max="null" min="null" name="TurnTracker.defaultDocked" wrap="false"/>
+        </VASSAL.build.module.folder.GlobalPropertyFolder>
     </VASSAL.build.module.properties.GlobalProperties>
     <VASSAL.build.module.PrototypesContainer>
         <VASSAL.build.module.PrototypeDefinition description="" name="========== Drop Shadows For Counters ==========">+/null/piece;;;;/null;0;0;</VASSAL.build.module.PrototypeDefinition>
@@ -2608,10 +2613,10 @@
         <VASSAL.build.module.map.MassKeyCommand buttonHotkey="" buttonText="Refill Hand" canDisable="false" deckCount="-1" filter="{BasicName==&quot;Turn&quot;}" hotkey="57614,0,DrawHandUSA" icon="Cards-deck.png" name="Refill Hand" propertyGate="" reportFormat="" reportSingle="false" singleMap="false" target="MAP|false|MAP|||||0|0||false|||EQUALS" tooltip="Refill hand for new turn"/>
         <VASSAL.build.module.map.Flare circleColor="255,0,0" circleScale="true" circleSize="100" flareKey="keyAlt" flareName="Map Flare" flarePulses="6" flarePulsesPerSec="3" reportFormat=""/>
     </VASSAL.build.module.PlayerHand>
-    <FTPTurn.TurnTracker buttonText="" buttonTooltip="Turn 1" hotkey="78,520" icon="toolbar_turn.png" length="-1" lengthStyle="Maximum" name="Turn" nexthotkey="93,520" prevhotkey="91,520" reportFormat="" tooltip="Right-click to configure" turnFormat="Turn $Turn$">
-        <FTPTurn.CounterTurnLevel incr="1" loop="true" loopLimit="13" name="Turn" property="Turn" start="1" turnFormat="$value$"/>
-        <FTPTurn.TurnGlobalHotkey hotkey="58009,0,ChangeTurn" match="" name="Change Turn" reportFormat=""/>
-    </FTPTurn.TurnTracker>
+    <VASSAL.build.module.turn.TurnTracker buttonText="" hotkey="78,520" icon="toolbar_turn.png" length="100" lengthStyle="Fixed" name="Turn" nexthotkey="93,520" plusButtonSize="28" prevhotkey="91,520" reportFormat="" tooltip="Right-click to configure" turnButtonHeight="40" turnFormat="&lt;html&gt;&lt;div style=&quot;text-align:center&quot;&gt;Turn $Turn$&lt;br&gt;&lt;span style=&quot;font-family:Arial;font-size:9px;font-weight:bold;text-align:center&quot;&gt;$Turn Name$&lt;/span&gt;&lt;/div&gt;&lt;/html&gt; Turn $Turn$">
+        <VASSAL.build.module.turn.CounterTurnLevel incr="1" loop="true" loopLimit="13" name="Turn" property="Turn" start="1" turnFormat="$value$"/>
+        <VASSAL.build.module.turn.TurnGlobalHotkey hotkey="58009,0,ChangeTurn" match="" name="Change Turn" reportFormat=""/>
+    </VASSAL.build.module.turn.TurnTracker>
     <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="" changeFormat="$message$" color="204,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="69,520" icon="toolbar-removed.png" launch="true" mapName="Permanently Removed" markMoved="Never" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="57586,0,MovedOnMap" moveToFormat="" moveWithinFormat="" showKey="" thickness="3" tooltip="Permanently Removed units and markers">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
             <VASSAL.build.module.map.boardPicker.Board image="permelim.png" name="Permanently Eliminated" reversible="false">
